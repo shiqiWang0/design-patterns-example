@@ -1,5 +1,6 @@
 import React from 'react';
 import StrategyForm from './examples/strategy-pattern';
+import './examples/OOP'
 
 
 function App() {
