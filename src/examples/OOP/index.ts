@@ -65,11 +65,11 @@ CheckObjectCopy4.prototype = {
 }
 
 const d = new ( CheckObjectCopy4 as any)()
-d.checkEmail().checkPhone().checkName()
+// d.checkEmail().checkPhone().checkName()
 
 // 如果想给每一个函数都添加一个检测对象的方法可以这样做
 
 // eslint-disable-next-line no-extend-native
-(Function.prototype as any).checkEmail = function(){}
+// (Function.prototype as any).checkEmail = function(){}
 
 // 这样的方式污染了 Function 原型

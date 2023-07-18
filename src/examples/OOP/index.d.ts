@@ -1,4 +1,0 @@
-interface Function {
-    checkEmail:()=> void
-}
-
