@@ -181,3 +181,17 @@ anotherBook.getName()
  ins2.getName()
  ins2.getAge()
 
+ // 多继承
+// extends 实现 // source 与 target 相同的属性会被 source 覆盖掉，有点问题？
+const extend = function (target:any,source:any) {
+   for(const property in source) {
+      // 这种方式是浅复制，只能复制值类型的属性
+      target[property] = source[property]
+   }
+   return target
+}
+
+// 实现多继承 mix： 本质原理是 将多个对象中的属性复制过来，就能实现对多个对象的属性的继承
+
+ // 多态： 就是同一个方法多种调用方式
+
